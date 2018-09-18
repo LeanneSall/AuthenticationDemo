@@ -1,0 +1,35 @@
+<% include ../partials/header.ejs %>
+<style>
+    body {
+    background-image: url(dark.jpg);
+    height: 100vh;
+    background-position: top;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-color: black;
+    color: white;
+    }
+    .center {
+        position: absolute;
+    left: 47%;
+    top: 40%;
+    transform: translate(-50%,-50%)
+    }
+    h4 {
+        padding-left: 90px;
+    }
+    .container {
+        padding-left:30px;
+    }
+</style>
+<div class=center>
+<h1>If you wish to view the secret</h1>
+<h4>You must sign in or sign up</h4>
+<div class="container">
+<a href="/register"><button class="ui inverted red button">Sign up here</button></a>
+<a href="/login"><button class="ui inverted red button">Log in</button></a>
+<a href="/logout"><button class="ui inverted red button">Log Out</button></a>
+</div>
+</div>
+
+<% include ../partials/footer.ejs %>
